@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
         :tag => s.version.to_s
     }
     s.platform = :osx, "10.8"
-    s.source_files      = 'LTIOUSB/*.{m,h}'
+    s.source_files      = 'Library/*.{m,h}'
     s.requires_arc      = true
 
 end
