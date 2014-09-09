@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.homepage          = 'https://github.com/mwhagedorn/LTIOUSB'
     s.license           = {
         :type => 'MIT',
-        :file => 'LICENSE'
+        :file => 'LICENSE.txt'
     }
     s.author            = {
         'Mike Hagedorn' => 'mike@silverchairsolutions.com'
