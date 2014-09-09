@@ -11,7 +11,6 @@
 		524930C814B8340100A1D2E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 524930C614B8340100A1D2E9 /* InfoPlist.strings */; };
 		524930CA14B8340100A1D2E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 524930C914B8340100A1D2E9 /* main.m */; };
 		524930CE14B8340100A1D2E9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 524930CC14B8340100A1D2E9 /* Credits.rtf */; };
-		524930D114B8340100A1D2E9 /* LTIOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 524930D014B8340100A1D2E9 /* LTIOAppDelegate.m */; };
 		524930D414B8340200A1D2E9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524930D214B8340200A1D2E9 /* MainMenu.xib */; };
 		524930DC14B8340200A1D2E9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524930DB14B8340200A1D2E9 /* SenTestingKit.framework */; };
 		524930DD14B8340200A1D2E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524930BD14B8340100A1D2E9 /* Cocoa.framework */; };
@@ -43,8 +42,6 @@
 		524930C914B8340100A1D2E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		524930CB14B8340100A1D2E9 /* LTIOUSB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LTIOUSB-Prefix.pch"; sourceTree = "<group>"; };
 		524930CD14B8340100A1D2E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		524930CF14B8340100A1D2E9 /* LTIOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTIOAppDelegate.h; sourceTree = "<group>"; };
-		524930D014B8340100A1D2E9 /* LTIOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTIOAppDelegate.m; sourceTree = "<group>"; };
 		524930D314B8340200A1D2E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		524930DA14B8340200A1D2E9 /* LTIOUSBTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTIOUSBTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524930DB14B8340200A1D2E9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -127,8 +124,6 @@
 		524930C314B8340100A1D2E9 /* LTIOUSB */ = {
 			isa = PBXGroup;
 			children = (
-				524930CF14B8340100A1D2E9 /* LTIOAppDelegate.h */,
-				524930D014B8340100A1D2E9 /* LTIOAppDelegate.m */,
 				524930D214B8340200A1D2E9 /* MainMenu.xib */,
 				524930C414B8340100A1D2E9 /* Supporting Files */,
 			);
@@ -222,7 +217,7 @@
 		524930B014B8340100A1D2E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 524930B314B8340100A1D2E9 /* Build configuration list for PBXProject "LTIOUSB" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -285,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				524930CA14B8340100A1D2E9 /* main.m in Sources */,
-				524930D114B8340100A1D2E9 /* LTIOAppDelegate.m in Sources */,
 				5249310A14B8816B00A1D2E9 /* LTIOUSBDevice.m in Sources */,
 				5249310B14B8816B00A1D2E9 /* LTIOUSBManager.m in Sources */,
 			);
@@ -349,8 +343,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -365,6 +364,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -376,8 +378,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -386,6 +393,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
@@ -395,6 +405,7 @@
 		524930EC14B8340200A1D2E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LTIOUSB/LTIOUSB-Prefix.pch";
 				INFOPLIST_FILE = "LTIOUSB/LTIOUSB-Info.plist";
@@ -406,6 +417,7 @@
 		524930ED14B8340200A1D2E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LTIOUSB/LTIOUSB-Prefix.pch";
 				INFOPLIST_FILE = "LTIOUSB/LTIOUSB-Info.plist";
@@ -418,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LTIOUSB.app/Contents/MacOS/LTIOUSB";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LTIOUSB/LTIOUSB-Prefix.pch";
@@ -432,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LTIOUSB.app/Contents/MacOS/LTIOUSB";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LTIOUSB/LTIOUSB-Prefix.pch";

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4F77654B-E9E8-48FB-B324-44938994F59F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LTIOUSB</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>15407C5C-3FAA-4C4D-8EA8-CA7F38FB1A02</key>
+		<string>ssh://github.com/mwhagedorn/LTIOUSB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LTIOUSB.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>15407C5C-3FAA-4C4D-8EA8-CA7F38FB1A02</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mwhagedorn/LTIOUSB.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>15407C5C-3FAA-4C4D-8EA8-CA7F38FB1A02</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>15407C5C-3FAA-4C4D-8EA8-CA7F38FB1A02</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LTIOUSB</string>
+		</dict>
+	</array>
+</dict>
+</plist>
