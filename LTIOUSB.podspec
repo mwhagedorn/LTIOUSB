@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name              = 'LTIOUSB'
-    s.version           = '0.0.3'
+    s.version           = '0.0.4'
     s.summary           = 'Description of your project'
     s.homepage          = 'https://github.com/mwhagedorn/LTIOUSB'
     s.license           = {
@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
     s.platform = :osx, "10.8"
     s.source_files      = 'Library/*.{m,h}'
     s.requires_arc      = true
+    s.framework = 'IOKit'
 
 end
