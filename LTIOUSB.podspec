@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name              = 'LTIOUSB'
-    s.version           = '0.0.1'
+    s.version           = '0.0.3'
     s.summary           = 'Description of your project'
     s.homepage          = 'https://github.com/mwhagedorn/LTIOUSB'
     s.license           = {
