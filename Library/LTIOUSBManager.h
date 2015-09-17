@@ -10,9 +10,9 @@
 #import <Foundation/Foundation.h>
 #import "LTIOUSBDevice.h"
 
-NSString* const LTIOUSBDeviceConnectedNotification;
-NSString* const LTIOUSBDeviceDisconnectedNotification;
-NSString* const LTIOUSBManagerObjectBaseClassKey; // the value must be NSString
+extern NSString* const LTIOUSBDeviceConnectedNotification;
+extern NSString* const LTIOUSBDeviceDisconnectedNotification;
+extern NSString* const LTIOUSBManagerObjectBaseClassKey; // the value must be NSString
 
 
 
